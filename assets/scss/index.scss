@@ -95,31 +95,16 @@ $font-Exo
       text-shadow: 1px 1px 1px #000;
     }
 
-    .card-wrapper{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content:space-around;
-      gap: 1rem;
-
-      .card{
-        color: #fff;
-        width: 20rem;
-        height: 20rem;
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content:center;
-        text-align:center;
-        background-color: rgba(0, 0, 0, 0.842);
-        box-shadow: 1px 1px 1rem #fff;
-
-      .img-card img{
-        width: 25%;
-      }
-      }
+    .container{
+      width: 100%;
+      height: 45rem;
+      overflow: hidden;
+      position: relative;
+      
     }
-  }
 }
+}
+
 .sessao-localizacao{
   width: 100%;
   font-family: $font-Exo;
@@ -136,8 +121,8 @@ $font-Exo
     justify-content: center;
     
     .info-localizacao{
-      width: 20rem;
-      background-color:rgb(214, 214, 214);
+      width: 25rem;
+      background-color:rgb(5, 5, 5);
       height: 29rem;
       color: #fff;
       display: flex;
@@ -145,6 +130,13 @@ $font-Exo
       flex-direction: column;
       align-items: center;
       border-radius:10px;
+
+      .container-redes-sociais-localizacao{
+        button{
+          padding: 1rem;
+          width: 25%;
+        }
+      }
 
       h3{
         text-shadow: 1px 1px 2px #000;
@@ -158,10 +150,56 @@ $font-Exo
   color: #fff;
   width: 100%;
   height: 20rem;
-  background-color: #00000080;
+  background-color: #000000d5;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .titulo-footer{
+    position: relative;
+
+    &:before{
+      content: "";
+      background-color: #088;
+      width: 5rem;
+      height: .3rem;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+
+  .container-footer{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .container-redes-sociais{
+      display: flex;
+      flex-direction: column; 
+      
+      a{
+        text-decoration: none;
+        margin:5px;
+        color: #fff;
+        i{
+          margin:5px;
+        }
+      }
+    }
+
+    .container-localizacao{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container-contatos{
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
