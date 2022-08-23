@@ -87,11 +87,41 @@ $font-Exo
   color: #fff;
   text-shadow: 1px 1px 1px #000;
 }
-.sessao-main .sessao-suplementos .container {
+.sessao-main .sessao-suplementos .card-wrapper {
   width: 100%;
-  height: 45rem;
+  height: 100%;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.sessao-main .sessao-suplementos .card-wrapper .card {
+  width: 30%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.63);
+  color: #fff;
+}
+.sessao-main .sessao-suplementos .card-wrapper .card .img-card {
+  width: 10%;
+}
+.sessao-main .sessao-suplementos .card-wrapper .card button {
+  border: none;
+  border-radius: 5px;
+  background-color: #088;
+  color: #fff;
+  transition: all 0.4s ease;
+  padding: 1rem;
+  margin: 1rem;
+}
+.sessao-main .sessao-suplementos .card-wrapper .card button:hover {
+  background-color: #ffff;
+  color: #088;
 }
 
 .sessao-localizacao {
