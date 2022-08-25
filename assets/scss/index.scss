@@ -1,6 +1,6 @@
-@import './backgrounds.scss';
-@import './colors.scss';
-@import './fontes.scss';
+@import "./backgrounds.scss";
+@import "./colors.scss";
+@import "./fontes.scss";
 
 /*
 FONTES:
@@ -9,93 +9,94 @@ $font-rubik
 $font-Exo
 */
 
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
 @keyframes animacao-fundo-background {
-  from{
+  from {
     transform: scale(1.5);
   }
 
-  to{
-    transform:scale(1);
+  to {
+    transform: scale(1);
   }
 }
 
-.sessao-header{
+.sessao-header {
   overflow: hidden;
   width: 100%;
   height: 35rem;
   position: relative;
-  background-color: $cor-fundo-sessoes ;
-  display:flex;
+  background-color: $cor-fundo-sessoes;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex-direction:column; 
+  flex-direction: column;
   clip-path: polygon(0 0, 100% 0, 100% 74%, 0 100%);
-  
-  img{  
+
+  img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .4;
+    opacity: 0.4;
     filter: blur(4px);
-    animation: animacao-fundo-background 10s infinite ease; 
+    animation: animacao-fundo-background 10s infinite ease;
   }
 
-  .info-header{
+  .info-header {
     z-index: 1;
     color: #fff;
     font-family: $font-Exo;
   }
 }
 
-.sessao-main{
+.sessao-main {
   overflow: hidden;
   width: 100%;
-  height: 70rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   position: relative;
 
-  .sessao-sobre-nos{
-    display:flex;
+  .sessao-sobre-nos {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    height:30rem;
+    height: 20rem;
+    overflow: hidden;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
     font-family: $font-Exo;
   }
 
-  .sessao-suplementos{
+  .sessao-suplementos {
     font-family: $font-Exo;
     width: 100%;
-    height: 80rem;
-    display:flex;
+    height: 50rem;
+    display: flex;
     flex-direction: column;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
     background-image: url("../../img//img-fundo/fundo3.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 
-    .titulo-suplementos{
+    .titulo-suplementos {
       text-align: center;
       color: #fff;
       text-shadow: 1px 1px 1px #000;
     }
 
-    .card-wrapper{
+    .card-wrapper {
       width: 100%;
       height: 100%;
       overflow: hidden;
@@ -105,80 +106,115 @@ $font-Exo
       justify-content: center;
       gap: 1rem;
 
-      .card{
+      .card {
         width: 30%;
         height: 15rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content:center;
+        justify-content: center;
         background-color: rgba(0, 0, 0, 0.63);
         color: #fff;
-        
-        .img-card{
+
+        .img-card {
           width: 10%;
         }
 
-        button{
+        button {
           border: none;
           border-radius: 5px;
           background-color: #088;
           color: #fff;
-          transition: all .4s ease;
+          transition: all 0.4s ease;
           padding: 1rem;
           margin: 1rem;
-          &:hover{
+          &:hover {
             background-color: #ffff;
             color: #088;
           }
         }
       }
     }
-}
+  }
 }
 
-.sessao-localizacao{
+.sessao-localizacao {
   width: 100%;
   font-family: $font-Exo;
   height: 40rem;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 
-  .container-info-localizacao{
+  .container-info-localizacao {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    .info-localizacao{
+
+    .info-localizacao {
       width: 25rem;
-      background-color:rgb(5, 5, 5);
+      background-color: rgb(5, 5, 5);
       height: 29rem;
       color: #fff;
       display: flex;
       text-align: center;
       flex-direction: column;
       align-items: center;
-      border-radius:10px;
+      border-radius: 10px;
 
-      .container-redes-sociais-localizacao{
-        button{
+      .formulario-contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: rgba(180, 180, 180, 0.582);
+        border-radius: 10px;
+        margin: 1rem;
+        width: 90%;
+
+        input {
+          outline: none;
+          border-radius: 0.4rem;
+          border: none;
+          padding: 0.4rem 2rem;
+        }
+
+        button {
+          border: none;
+          padding: 0.4rem 4rem;
+          margin: 1rem;
+          border-radius: 0.2rem;
+          background-color: #088;
+          color: #fff;
+          transition: all 0.4s ease-in-out;
+
+          &:hover {
+            background-color: #fff;
+            color: #088;
+          }
+        }
+      }
+
+      .container-redes-sociais-localizacao {
+        button {
           padding: 1rem;
           width: 25%;
         }
       }
 
-      h3{
+      h3 {
         text-shadow: 1px 1px 2px #000;
       }
     }
-
   }
 }
 
-.sessao-footer{
+.sessao-footer {
+  overflow: hidden;
   color: #fff;
   width: 100%;
   height: 20rem;
@@ -189,20 +225,20 @@ $font-Exo
   flex-direction: column;
   align-items: center;
 
-  .titulo-footer{
+  .titulo-footer {
     position: relative;
 
-    &:before{
+    &:before {
       content: "";
       background-color: #088;
       width: 5rem;
-      height: .3rem;
+      height: 0.3rem;
       bottom: 0;
       position: absolute;
     }
   }
 
-  .container-footer{
+  .container-footer {
     display: flex;
     gap: 1rem;
     width: 100%;
@@ -210,28 +246,130 @@ $font-Exo
     justify-content: space-around;
     align-items: center;
 
-    .container-redes-sociais{
+    .container-redes-sociais {
       display: flex;
-      flex-direction: column; 
-      
-      a{
+      flex-direction: column;
+
+      a {
         text-decoration: none;
-        margin:5px;
+        margin: 5px;
         color: #fff;
-        i{
-          margin:5px;
+        i {
+          margin: 5px;
         }
       }
     }
 
-    .container-localizacao{
+    .container-localizacao {
       display: flex;
       flex-direction: column;
     }
 
-    .container-contatos{
+    .container-contatos {
       display: flex;
       flex-direction: column;
+    }
+  }
+}
+
+@media(max-width:1000px){
+  .sessao-localizacao{
+    height:70rem;
+    .container-info-localizacao{
+      flex-direction: column;
+
+      .mapa-localizacao{
+        width: 90%;
+
+        iframe{
+          width: 100%;
+        }
+      }
+      .info-localizacao{
+        order: -1;
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 836px) {
+  .sessao-main {
+    .sessao-sobre-nos {
+      height: 20rem;
+    }
+    .sessao-suplementos {
+      height: 60rem;
+      width: 100%;
+
+      .card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+
+        .card {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 759px) {
+  .sessao-main{
+    .sessao-sobre-nos{
+      height: 29rem;
+    }
+  }
+  .sessao-footer {
+    height: 35rem;
+
+    .container-footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .sessao-main {
+
+    .sessao-sobre-nos {
+      height: 35rem;
+    }
+
+    .sessao-suplementos{
+      height: 100rem;
+
+      .card-wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .card{
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:403px){
+  .sessao-main{
+    .sessao-sobre-nos{
+      height: 40rem;
+    }
+  }
+}
+
+@media (max-width: 381px) {
+  .sessao-main {
+    .sessao-sobre-nos {
+      height: 60rem;
     }
   }
 }
