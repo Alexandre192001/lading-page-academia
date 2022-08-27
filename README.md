@@ -1,4 +1,4 @@
-<h1>Lading Page - ACADEMIA</h1>
+<h1>Lading Page - Academia </h1>
 <hr>
 <h2>Linguagens Utilizadas:</h2>
 
