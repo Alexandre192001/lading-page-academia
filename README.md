@@ -9,7 +9,7 @@
 </div>
 <hr>
 <h2>⚜️Descrição⚜️</h2>
-<p>Lading page simulando um site para uma academia. </p>
+<p>Lading page sobre academia </p>
 <hr>
 LINK: https://lading-page-academia-ale.netlify.app/
 <hr>
